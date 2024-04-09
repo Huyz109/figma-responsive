@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 const Side = styled.div`
-   width: 50%;
-   box-sizing: border-box;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+        width: 50%;
+    }
 `
 
 const SideImg = styled.img`
@@ -18,6 +20,7 @@ const Button = styled.button<any>`
   padding: 15px;
   font-family: inherit;
   cursor: pointer;
+  font-weight: 600;
 `
 
 const Input = styled.input`
@@ -57,15 +60,20 @@ const Strike = styled.p`
 
 const StrikeContent = styled.span`
   background:#fff; 
-  padding:0 2rem; 
+  padding:0 2em; 
 `
 
 const LogoBox = styled.div`
-  height: 3rem;
   align-items: center;
   border: 1px solid #D9D9D9;
   border-radius: 11px;
   display: flex;
+  @media (max-width: 768px) {
+    height: 2.5em;
+  }
+  @media (min-width: 768px) {
+    height: 3em;
+  }
 `
 
 const LogoIcon = styled.img`

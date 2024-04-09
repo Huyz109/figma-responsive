@@ -13,7 +13,7 @@ const Logos = [Google, Facebook, Ig, Twitter]
 function App() {
   return (
     <div className="App">
-      <div className="container flex">
+      <div className="container">
         {/* LOGIN PAGE */}
         <Side className="side-img">
           <SideImg src={sideImg} />
@@ -30,7 +30,7 @@ function App() {
               </div>
               <Link href="" color={themeColor}>Forget password</Link>
             </div>
-            <Button backgroundColor={themeColor}>Login</Button>
+            <Button backgroundColor={themeColor}>Log in</Button>
             <p className='signUp-line'>Don't have an account? <Link href="" color={themeColor}>Sign up</Link></p>
             <Strike><StrikeContent>Or continue with</StrikeContent></Strike>
             <div className="logo-list flex">

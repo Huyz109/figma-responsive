@@ -80,7 +80,7 @@
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .side-content {
     background: url('./assets/img/side-img.png');
     height: 100vh;
@@ -108,14 +108,15 @@
 }
 
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .side-img {
     text-align: end;
     display: block;
   }
 
   .side-content {
-    padding: 4rem 2rem 0;
+    padding: 1em 2rem;
+    background-color: white;
   }
 
   .container {
@@ -124,7 +125,7 @@
 }
 
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .side-content {
     padding-left: 6rem;
   }

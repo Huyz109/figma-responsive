@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Side = styled.div`
     box-sizing: border-box;
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
         width: 50%;
     }
 `
@@ -71,7 +71,7 @@ const LogoBox = styled.div`
   @media (max-width: 768px) {
     height: 2.5em;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     height: 3em;
   }
 `

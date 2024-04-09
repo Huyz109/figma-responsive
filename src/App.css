@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  min-width: 320px;
 }
 
 .App-logo {
@@ -35,4 +35,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.side-img {
+  text-align: end;
+}
+
+.heading {
+  color: black;
+}
+
+.side-content {
+  color: #818181;
+  padding-left: 6rem;
+}
+
+.form {
+  width: 80%;
+}
+
+.remember {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.keep {
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.signUp-line {
+  margin: 1.5rem 0 2.2rem;
+}
+
+.logo-list {
+  margin-top: 2.5rem;
+  gap: 20px;
+  justify-content: center;
 }

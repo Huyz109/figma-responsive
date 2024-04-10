@@ -30,7 +30,7 @@ const SignIn = () => {
                     </div>
                 </div>
                 <Button backgroundColor={themeColor}>Create an account</Button>
-                <p className='signUp-line'>Already a member? <Link href="" color={themeColor}>Login</Link></p>
+                <p className='signUp-line'>Already a member? <Link href="/" color={themeColor}>Login</Link></p>
                 <Strike><StrikeContent>Or continue with</StrikeContent></Strike>
                 <div className="logo-list flex">
                     {Logos.map(logo => <LogoBox><LogoIcon src={logo}/></LogoBox>)}

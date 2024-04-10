@@ -11,6 +11,8 @@ const Side = styled.div`
 
 const SideImg = styled.img`
   max-height: 100%;
+  vertical-align: top;
+  max-width: 100%;
 `
 
 const Link = styled.a<any>`
@@ -60,10 +62,6 @@ const Container = styled.div`
     display: flex;
   }
 
-  .side-img {
-    display: none;
-  }
-
   .side-content {
     color: #818181;
     max-height: 100vh;
@@ -101,6 +99,10 @@ const Container = styled.div`
 
   /* Mobile */
   @media (max-width: 768px) {
+    .side-img {
+      display: none;
+    }
+
     .side-content {
       background: url(${sideImg});
       height: 100vh;
@@ -150,6 +152,44 @@ const Container = styled.div`
 
     .form {
       width: 85%;
+    }
+  }
+
+    /* Portrait */
+  @media (orientation: portrait) {
+    .side-img {
+      display: none;
+    }
+
+    .side-content {
+      background: url(${sideImg});
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+
+    .heading {
+      margin-top: 0;
+    }
+
+    .form {
+      border-radius: 10px;
+      padding: 1.8em;
+      box-sizing: border-box;
+      width: 90%;
+    }
+
+    .remember {
+      flex-direction: column;
+      gap: 0.8em;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-aspect-ratio: 1.7) and (max-height: 700px) {
+    .side-img img {
+      max-height: max-content;
     }
   }
 `

@@ -29,7 +29,7 @@ const Login = () => {
                     <Link href="" color={themeColor}>Forget password</Link>
                 </div>
                 <Button backgroundColor={themeColor}>Log in</Button>
-                <p className='signUp-line'>Don't have an account? <Link href="" color={themeColor}>Sign up</Link></p>
+                <p className='signUp-line'>Don't have an account? <Link href="/signin" color={themeColor}>Sign up</Link></p>
                 <Strike><StrikeContent>Or continue with</StrikeContent></Strike>
                 <div className="logo-list flex">
                     {Logos.map(logo => <LogoBox><LogoIcon src={logo}/></LogoBox>)}

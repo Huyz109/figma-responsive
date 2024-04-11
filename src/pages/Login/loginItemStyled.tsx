@@ -12,7 +12,7 @@ const Side = styled.div`
 const SideImg = styled.img`
   max-height: 100%;
   vertical-align: top;
-  max-width: 100%;
+  min-width: 80%;
 `
 
 const Link = styled.a<any>`
@@ -108,6 +108,7 @@ const Container = styled.div`
       height: 100vh;
       display: flex;
       justify-content: center;
+      padding: 1.5rem 0;
     }
 
     .heading {
@@ -167,6 +168,7 @@ const Container = styled.div`
       display: flex;
       justify-content: center;
       width: 100vw;
+      padding: 1.5rem 0;
     }
 
     .heading {
@@ -190,6 +192,7 @@ const Container = styled.div`
   @media (min-aspect-ratio: 1.7) and (max-height: 700px) {
     .side-img img {
       max-height: max-content;
+      max-width: 100%;
     }
   }
 `
